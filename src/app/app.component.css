@@ -1,0 +1,25 @@
+.radio {
+    display: none;
+  }
+  .radio ~ span {
+    font-size: 3rem;
+    filter: grayscale(100);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .radio:checked ~ span {
+    filter: grayscale(0);
+    font-size: 4rem;
+  }
+  .radio:hover ~ span {
+    filter: grayscale(0);
+    width:300px;
+  }
+  .emoji:hover ~ span {
+    filter: grayscale(0);
+  }
+  a {
+    padding: 10px;
+
+  }

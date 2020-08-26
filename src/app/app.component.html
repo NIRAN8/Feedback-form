@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-lg bg-light navbar-light mb-4">
+  <a class="navbar-brand">Login Form</a>   
+</nav>
+  <div class="row">
+    <div class="col-md-6 mx-auto">
+    <form #myForm="ngForm">
+    <div class="form-group">
+      <label for="firstName" >FirstName</label>
+      <input  type="text" class="form-control"
+      name="firstName"
+      #age="ngModel"
+      ngModel
+      required>
+    </div>
+    <div class="form-group">
+      <label for="lastName" >LastName</label>
+      <input  type="text" class="form-control"
+      name="lastName"
+      #age="ngModel"
+      ngModel
+      required>
+    </div>
+    <div class="form-group">
+      <label for="mobNum" >Mobile Number</label>
+      <input  type="number" class="form-control"
+      name="mobNum"
+      #age="ngModel"
+      ngModel
+      required>
+      </div>
+
+    <button type="button" class="btn btn-info btn-block" [disabled]="!myForm.valid"><span>Submit</span></button>
+  
+    <hr>
+    <div class="row">
+      <div class="col align-self-center">
+        <h2>Simple example! How is it?</h2>
+        <p>Would like to know from you</p>
+        <div class="col align-self-center"> 
+          <label for="0">
+          <input class="radio" type="radio" name="feedback" id="0" value="0">
+          <span class="emoji">😁</span>
+        </label>
+        
+          <label for="1">
+          <input class="radio" type="radio" name="feedback" id="1" value="1">
+          <span class="emoji">🙁</span>
+        </label>
+        
+    
+          <label for="2">
+          <input class="radio" type="radio" name="feedback" id="2" value="2">
+          <span >😍</span>
+        </label>
+      
+      </div>
+      </div>
+    </div>
+            <div class="form-group mt-4"> 
+              <textarea class="form-control" rows="4" placeholder="Message" ></textarea> </div>
+            <div class="mt-2"> <button type="button" class="btn btn-info btn-block"><span>Send feedback</span></button> </div>
+    </form>
+  </div>
+  </div>
+
+
